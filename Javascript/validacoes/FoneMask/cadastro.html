@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../imgs/favicon/2094logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="validacoes.js"></script>
+    <title>validações</title>
+</head>
+
+<body>
+    <div id="corpo">
+        <div class="container-md col-6" id="principal">
+            <form method="POST" action="../controllerPhp/cadastrar.php" onsubmit="return ( verificar() )" name="frmEnviar">
+                <h1>Validações</h1>
+                <!-- Nome -->
+                <p>Nome</p>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Informe o seu nome...">
+                <br>
+                <!-- E-mail -->
+                <p>E-mail</p>
+                <input type="email" name="email" id="email" class="form-control" onblur="checarEmail()"
+                    placeholder="Informe seu e-mail...">
+                <br>
+                <!-- CPF -->
+                <p>CPF</p>
+                <input type="text" name="cpf" id="cpf" class="form-control" onkeypress="mascaraCPF()"
+                    placeholder="Informe seu CPF..." maxlength="14">
+                <br>
+                <!-- Celular -->
+                <p>Fone</p>
+                <input type="text" id="fone" name="fone" class="form-control" onblur="maskFone(this)" onfocus="tiraHifen(this)" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    placeholder="Informe seu número de celular..." maxlength="11">
+                <br>
+                <h2>ENDEREÇO</h2>
+                <div class="input-group mb-4">
+                    <!-- CEP -->
+                    <span class="input-group-text">CEP</span>
+                    <input type="text" name="cep" id="cep" class="form-control" placeholder="Informe o seu CEP...">
+                    <!-- Rua -->
+                    <span class="input-group-text">Rua</span>
+                    <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Ex: Rua Perdizes">
+                </div>
+                <div class="input-group mb-4">
+                    <!-- Bairro -->
+                    <span class="input-group-text">Bairro</span>
+                    <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Ex: Belles">
+                    <!-- Cidade -->
+                    <span class="input-group-text">Cidade</span>
+                    <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Ex: Lagum">
+                    <!-- Estado -->
+                    <span class="input-group-text">Estado</span>
+                    <input type="text" name="estado" id="estado" class="form-control" placeholder="Ex: PR">
+                </div>
+                <div class="input-group mb-4">
+                    <!-- Número da casa -->
+                    <span class="input-group-text">Número</span>
+                    <input type="text" name="numeroCasa" id="numeroCasa" class="form-control" placeholder="Ex: 103">
+                    <!-- Complemento -->
+                    <span class="input-group-text">Complemento</span>
+                    <input type="text" name="complemento" id="complemento" class="form-control" placeholder="">
+                </div>
+                <button class="btn btn-primary" name="cadastrar" onclick="verificar()">CADASTRAR</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

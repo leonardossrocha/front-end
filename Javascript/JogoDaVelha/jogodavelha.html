@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Jogo da Velha</title>
+    <style type="text/css">
+        .CaseGame {
+            width: 100px;
+            height: 100px;
+            background: #99ccff;
+            font-size: 80px;
+            color: #ff0000;
+            cursor: pointer;
+        }
+
+        .bckg {
+            background: #000066;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+    <script language="JavaScript" type="text/javascript">
+        letra = "X";
+
+        function joga(celula) {
+            celulaclicada = document.getElementById(celula).innerHTML;
+            if (celulaclicada == "X" || celulaclicada == "O") {
+                alert("Opa, este quadrado já foi escolhido!");
+            } else {
+                document.getElementById(celula).innerHTML = letra;
+                if (letra == "X") {
+                    letra = "O";
+                } else {
+                    letra = "X";
+                }
+            }
+        }
+
+        function verif() {
+            c11 = document.getElementById('celula11').innerHTML;
+            c12 = document.getElementById('celula12').innerHTML;
+            c13 = document.getElementById('celula13').innerHTML;
+            c21 = document.getElementById('celula21').innerHTML;
+            c22 = document.getElementById('celula22').innerHTML;
+            c23 = document.getElementById('celula23').innerHTML;
+            c31 = document.getElementById('celula31').innerHTML;
+            c32 = document.getElementById('celula32').innerHTML;
+            c33 = document.getElementById('celula33').innerHTML;
+            if (((c11 != '') && (c12 != '') && (c13 != '') && (c11 == c12) && (c12 == c13)) || ((c11 != '') && (c22 != '') && (c33 != '') && (c11 == c22) && (c22 == c33)) || ((c11 != '') && (c21 != '') && (c31 != '') && (c11 == c21) && (c21 == c31)) || ((c21 != '') && (c22 != '') && (c23 != '') && (c21 == c22) && (c22 == c23)) || ((c31 != '') && (c32 != '') && (c33 != '') && (c31 == c32) && (c32 == c33)) || ((c12 != '') && (c22 != '') && (c32 != '') && (c12 == c22) && (c22 == c32)) || ((c13 != '') && (c23 != '') && (c33 != '') && (c13 == c23) && (c23 == c33)) || ((c31 != '') && (c22 != '') && (c13 != '') && (c31 == c22) && (c22 == c13))) {
+                alert('Você ganhou! Parabéns campeão!');
+                novo();
+            }
+        }
+
+        function novo() {
+            for (i = 1; i < 4; i++) {
+                for (j = 1; j < 4; j++) {
+                    nomecelula = 'celula' + i + j
+                    document.getElementById(nomecelula).innerHTML = '';
+
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <table class="bckg">
+
+        <tr>
+            <td valign="middle" id="celula11" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula12" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula13" class="CaseGame" onclick="joga(this.id);verif();"></td>
+        </tr>
+
+        <tr>
+            <td valign="middle" id="celula21" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula22" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula23" class="CaseGame" onclick="joga(this.id);verif();"></td>
+        </tr>
+
+        <tr>
+            <td valign="middle" id="celula31" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula32" class="CaseGame" onclick="joga(this.id);verif();"></td>
+            <td valign="middle" id="celula33" class="CaseGame" onclick="joga(this.id);verif();"></td>
+        </tr>
+
+    </table>
+    <br><input type="button" name="limpar" value="Novo jogo" onclick="novo();" />
+</body>
+
+</html>

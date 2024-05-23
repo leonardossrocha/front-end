@@ -1,0 +1,71 @@
+
+body{
+    background-image: linear-gradient(to left,rgb(103, 102, 110),rgb(24, 23, 27));
+    margin: 0;
+    padding: 0;
+}
+.form{
+    border: 1px solid rgb(148, 147, 155);
+    padding: 50px;
+    width: 250px;
+    border-radius: 10px;
+
+}
+/*Login */
+
+#login{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h1{  
+    font-size: 50px;
+     text-align:left;
+    color:rgb(145, 143, 156);
+    transition: .1s;
+    text-align: center;
+    font-family: Candara;
+}
+
+h1:hover{
+    font-size: 350%;
+}
+/*Caixa de texto*/
+
+input{
+   width:250px;
+   height:40px;
+   transition: .1s;
+   background-color:rgb(122, 122, 122);;
+   border: none;
+   border-radius: 10px;
+}
+/*botão de iniciar*/
+
+button{
+    width:250px;
+    height:40px;
+    font-family: Candara;
+    border: none;
+    border-radius: 10px;
+    margin: 2.5%;
+    background-color: rgb(36, 34, 63);
+    color: rgb(145, 143, 156);
+}
+button:hover {
+    font-size: 100%;;
+}
+/*Imagens de login*/
+
+img{
+    width:9%;
+    height:9%;
+    transition: .1s;
+}
+img:hover{
+    width:12%;
+    height:12%;
+ 
+   
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calcula juro de parcelas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        input{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programa para cálculo e apresentação de juro de parcelas</h1>
+    Informe o produto: <input value='Informe o nome do produto' type="text" onblur="if(this.value == ''){ this.value='Informe o nome do produto';}" onfocus="if(this.value == 'Informe o nome do produto'){ this.value='';}"/><br><br>
+Informe o valor: <input value="Informe o valor" onblur="if(this.value == ''){ this.value='Informe o valor'; this.type='text';}" onfocus="if(this.value == 'Informe o valor'){ this.value=''; this.type='number';}"/><br> <br>
+<label> Escolha quantas parcelas deseja: </label>
+<select id="escolha">
+    <option value="op0">Escolha uma</option>
+    <option value="op1">Até 3x  | +3%</option>
+    <option value="op2">4 a 6x  | +6%</option>
+    <option value="op3">7 a 9x  | +8%</option>
+    <option value="op4">10x     | +3%</option>
+</select>
+<br><br>
+
+<script>
+    if(document.getElementById('escolha') == 'op0')
+    {
+        console.log(document.getElementById('escolha'));
+    }
+</script>
+
+</body>
+</html>

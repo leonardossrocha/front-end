@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+
+div#principal{
+    background-color:white;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.77);
+    border: 2px solid;
+    box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.77);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    font-weight: 400;
+}
+
+input{
+    text-align: left;
+}
+
+.form-control{
+    margin-right: 15px;
+}

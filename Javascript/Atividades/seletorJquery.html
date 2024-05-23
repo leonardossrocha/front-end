@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Introdução jQuery </title>
+
+    <!-- Referencia a biblioteca jquery (JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <!-- Funcionalidades da página -->
+    <script type="text/javascript">
+  function Exibir()
+    {
+    $("#texto").fadeIn("slow");
+    }
+
+    </script>
+</head>
+<body>
+<input type="button" onclick="Exibir()" value="exibe Texto" />
+<p id="texto" style="display: none;">
+  Exemplo de uso de seletor com JQuery
+</p>
+</body>
+</html>

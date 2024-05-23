@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cálculos com função</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Cálculo com função anônima</h2>
+
+    <script>
+        var calculo = function(num1, num2){
+            var resultSoma = num1 + num2;
+            var resultSub  = num1 - num2;
+            alert("O resultado da soma é: " + resultSoma);
+            alert("O resultado da subtração é: " +resultSub);
+        }
+
+        var valor1 = parseInt(prompt("Informe o primeiro número: "));
+        var valor2 = parseInt(prompt("Informe o segundo número: "));
+        calculo(valor1, valor2);
+    </script>
+</body>
+</html>

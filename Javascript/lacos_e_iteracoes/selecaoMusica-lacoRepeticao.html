@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Estrutura de repetição</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            border: 3px solid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30em;
+           
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: #293f50;
+        }
+
+        div {
+            background-color: #a9b2b9;
+        }
+
+        h1 {
+            color: #648880;
+        }
+        select{
+            height: 200px;
+        }
+        #button{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício com estrutura de repetição</h1>
+    <div class="container">
+        <form name="selectForm">
+            <p>
+                <label for="tipoMusica">Escolha alguns tipos de música, em seguida, clique no botão abaixo:</label>
+                <select id="tipoMusica" name="tipoMusica" multiple="multiple">
+                    <option selected="selected">R&B</option>
+                    <option>Jazz</option>
+                    <option>Blues</option>
+                    <option>New Age</option>
+                    <option>Classico</option>
+                    <option>Ópera</option>
+                    <option>Rock</option>
+                    <option>Sertanejo</option>
+                    <option>Funk</option>
+                    <option>Trap</option>
+                </select>
+            </p>
+            <p id="button"><input id="btn" type="button" value="Quantos foram selecionados?" /></p>
+        </form>
+    </div>
+
+    <script>
+        function howMany(selectObject) {
+            var numeroSelecionadas = 0;
+            for (var i = 0; i < selectObject.options.length; i++) {
+                if (selectObject.options[i].selected) {
+                    numeroSelecionadas++;
+                }
+            }
+            return numeroSelecionadas;
+        }
+
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+            alert('Total de opções selecionadas: ' + howMany(document.selectForm.tipoMusica))
+        });
+    </script>
+</body>
+
+</html>

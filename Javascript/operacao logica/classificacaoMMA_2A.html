@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Classificação de lutadores do MMA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #titulo{
+            font-size: 40px;
+            color: white;
+            background-color: rgb(165, 96, 6);
+            text-align: center;
+            padding: 20px;
+            font-family: Verdana;
+            font-weight: bolder;
+        }
+        p{
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+    <p id="titulo">Programa de classificação de lutadores de MMA</p>
+    <p>Informe seu nome: </p>
+    <input id="nome" type="text">
+    <p>Informe sua idade: </p>
+    <input id="idade" type="number">
+    <p> Informe seu peso: </p>
+    <input id="peso" type="number"><br/><br/>
+    <button onclick="Classificar()">Verificar</button>
+    <p id="resultado">Classficação</p>
+
+    <script type="text/javascript">
+        function Classificar(){
+        let nome    = document.getElementById('nome').value;
+        let idade   = document.getElementById('idade').value;
+        let peso    = document.getElementById('peso').value;
+        
+        if(peso <= 52.2){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " Você foi classificado na categoria Peso Palha";
+        }
+        if(peso > 52.2 && peso <= 56.7){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Mosca";
+        }
+        if(peso > 56.7 && peso <= 61.2){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Galo";
+        }
+        if(peso > 61.2 && peso <= 65.8){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Pena";
+        }
+        if(peso > 65.8 && peso <= 70.3){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Leve";
+        }
+        if(peso > 70.3 && peso <= 77.1){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Meio-Médio";
+        }
+        if(peso > 77.1 && peso <= 83.9){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Médio";
+        }
+        if(peso > 83.9 && peso <= 92.9){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Meio-Pesado";
+        }
+        if(peso > 92.9 && peso <= 120.2){
+            document.getElementById('resultado').innerHTML = "Parabéns " + nome + " você foi classificado na categoria Peso Meio-Pesado";
+        }
+        if(peso > 120.2){
+            document.getElementById('resultado').innerHTML = "Que pena " + nome + " você está fora das categorias disponíveis";
+        }
+
+    }
+    </script>
+</body>
+</html>

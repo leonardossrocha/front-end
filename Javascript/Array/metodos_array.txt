@@ -1,0 +1,25 @@
+### MÉTODOS JAVASCRIPT PARA MANIPULAÇÃO DE ARRAY ###
+
+toString() 	- retorna uma string representando um array específico e seus elementos.
+join() 		- junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string.
+concat() 	- é utilizado para mesclar dois ou mais arrays. Esse método não altera os arrays existentes, mas, em vez disso, retorna um novo array.
+push() 		- adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+pop() 		- remove o último elemento de um array e retorna aquele elemento.
+shift() 	- remove o primeiro elemento de um array e retorna esse elemento. Este método muda o tamanho do array.
+unshift() 	- adiciona um ou mais elementos no início de um array e retorna o número de elementos (propriedade length) atualizado.
+splice() 	- altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+slice() 	- retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original. O Array original não é modificado.
+indexOf() 	- retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+lastIndexOf() 	- retorna o ultimo índice que um certo elemento pode ser encontrado no array, ou -1 se o elemento não estiver presente. O array é pesquisado de trás para frente, começando pelo fromIndex.
+filter() 	- cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+map() 		- invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
+reduce() 	- executa uma função reducer (fornecida por você) para cada elemento do array, resultando num único valor de retorno.
+forEach() 	- executa uma dada função em cada elemento de um array.
+every() 	- testa se todos os elementos do array passam pelo teste implementado pela função fornecida. Este método retorna um valor booleano.
+some() 		- testa se ao menos um dos elementos no array passa no teste implementado pela função atribuída e retorna um valor true ou false.
+includes() 	- determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+
+
+
+Fonte: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+Consulta em: 25/05/2023.

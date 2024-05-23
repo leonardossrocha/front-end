@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #titulo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+            background-color: cadetblue;
+            text-align: center;
+            padding: 20px;
+            font-weight: bolder;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="titulo">Programa de classificação de lutador de MMA</p>
+    <p>Informe seu nome: </p>
+    <input id="nome" type="text">
+    <p>Informe sua idade: </p>
+    <input id="idade" type="number">
+    <p>Informe seu peso: </p>
+    <input id="peso" type="number"><br><br>
+    <button onclick="Classificar()">Classificar</button>
+    <p id="resposta">Classificação</p>
+
+    <script type="text/javascript">
+        function Classificar(){
+            let nome = document.getElementById('nome').value;
+            let idade = document.getElementById('idade').value;
+            let peso = document.getElementById('peso').value;
+
+            if(peso <= 52.2){
+                document.getElementById('resposta').innerHTML = "Parabéns " + nome + ", você está na categoria Palha";
+
+            }
+            if(peso > 52.2 && peso <=56.7){
+                document.getElementById('resposta').innerHTML = "Parabéns " + nome + ", você está na categoria Mosca";
+            }
+            if(peso > 56.7 && peso <=61.2){
+                document.getElementById('resposta').innerHTML = "Parabéns " + nome + ", você está na categoria Galo";
+            }
+            
+        }   
+
+    </script>
+</body>
+</html>

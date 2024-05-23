@@ -1,0 +1,89 @@
+<<<<<<<< HEAD:codigos/Front-End/formularios/Login/login 1/style.css
+.form{
+    padding: 40px;
+    border-radius: 2px;
+    width: 250px;
+}
+.form input{
+    width: 250px;
+    height: 20px;
+    margin: 0 auto;
+    border: none;
+}
+.form label{
+    font-family: verdana;
+    color: white;
+}
+.form button{
+    margin: 0 auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    display: block;
+}
+.form h1{
+    text-align: center;
+    color: white;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: verdana;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom right,black, blue);
+}   
+
+========
+.form{
+    padding: 40px;
+    border-radius: 2px;
+    width: 250px;
+    /*background-image: linear-gradient(to bottom right,blue, black);*/
+    
+}
+.form input{
+    width: 250px;
+    height: 20px;
+    margin: 0 auto;
+    border: none;
+}
+.form label{
+    font-family: verdana;
+    color: white;
+}
+.form button{
+    margin: 0 auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    display: block;
+
+}
+.form h1{
+    text-align: center;
+    color: white;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: verdana;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom right,black, blue);
+}   
+>>>>>>>> 365e598d60f823a50e06cc18753f35bc6201c128:codigos/Front-End/formularios/Login/login 1/exercicio-formulario.css

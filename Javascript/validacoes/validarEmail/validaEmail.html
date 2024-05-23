@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--Exemplo de uso de valição simples de campo de e-mail
+    fonte: https://www.linhadecomando.com/javascript/javascript-validando-campos-de-email
+-->
+<html lang="pt-br">
+	<head>
+    <title>Validação de email</title>
+    <meta charset="utf-8">
+	</head>
+<body>
+<form method="post" action="" onSubmit="return ( verifica() )" name="frmEnvia">
+   <label for="email">E-mail: </label>
+   <input name="email" type="text" class="input" id="email" onblur="checarEmail();" />
+   <input name="submit" type="submit" value=" ENVIAR " />
+</form>
+<script type="text/javascript" src="_js/controller.js"></script>
+</body>
+</html>
