@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de função</title>
-    <style>
+    <!-- <style>
         #res{
             color: white;
             background-color: blue;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -48,7 +48,17 @@
         var somarNumeros = (v1, v2) => parseInt(v1) + parseInt(v2);
         
         // Chama a arrow fuction enxuta para execução
-        document.getElementById('res').innerHTML = "O resultado da soma é " + somarNumeros(val1, val2);
+        if (!val1 || !val2) {
+            alert("Favor, informar dois números");
+        } else if (somarNumeros(val1, val2) < 10) {
+            let tag = document.getElementById("res");
+            tag.style.color = 'red';
+            tag.innerHTML = "O resultado da soma é " + somarNumeros(val1, val2);
+
+        } else {
+            document.getElementById("res").innerHTML = "O resultado da soma é " + somarNumeros(val1, val2);
+            
+        }
 
         // Chama as funções 1 e 2 para a execução
         //somarNumeros(val1, val2);
