@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de função</title>
     <style>
         #res{
-            color: red;
+            color: white;
+            background-color: blue;
         }
     </style>
 </head>
+
 <body>
     <h1>Programa para soma de números</h1>
     <div id="res"></div>
+    <!-- Início do bloco de javascript -->
     <script>
         // Bloco de criação de variáveis da aplicação
         let val1 = prompt("Informe o 1º valor");
         let val2 = prompt("Informe o 2º valor");
-
         // Bloco de criação da função que utilizará as variáveis criadas
         // 1ª Função no formato clássico
-        function somarNumeros(v1, v2){
+        /*
+        function somarNumeros(v1, v2) {
             let resultado = parseInt(v1) + parseInt(v2);
             // 1ª Forma de exibir o resultado ao usuário
             //console.log("O resultado da soma é " + resultado);
@@ -30,15 +34,27 @@
             //document.write("O resultado da soma é " + resultado);
             // 4ª Forma de exibir o resultado ao usuário
             document.getElementById('res').innerHTML = "O resultado da soma é " + resultado;
-            
+
         }
-
+        */
         // 2º Função no formato de Arrow Function
+        /*
+        var somarNumeros = (v1, v2) => {
+            let resultado = parseInt(v1) + parseInt(v2);
+            document.write("O resultado da soma é " + resultado);
+        }
+        */
+        // 3º Função no formato de Arrow Function enxuta
+        var somarNumeros = (v1, v2) => parseInt(v1) + parseInt(v2);
+        
+        // Chama a arrow fuction enxuta para execução
+        document.getElementById('res').innerHTML = "O resultado da soma é " + somarNumeros(val1, val2);
 
-
-        // Chama a função para execução
-        somarNumeros(val1, val2);
+        // Chama as funções 1 e 2 para a execução
+        //somarNumeros(val1, val2);
     </script>
+    <!-- Fim do bloco de javascript -->
 
 </body>
+
 </html>
