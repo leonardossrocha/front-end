@@ -19,7 +19,7 @@ function salvarUser() {
     if(nomeUser){
     dadosLista.push(nomeUser);
     criaLista();
-    console.log(dadosLista);
+    //console.log(dadosLista);
     document.getElementById("nomeUser").value = "";
     } else {
         alert("Usuário favor preencher o campo nome");
