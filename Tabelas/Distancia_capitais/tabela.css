@@ -1,0 +1,41 @@
+/*Estilização da tabela*/
+
+table, td, th{
+    border: solid 0px black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td {
+width: 90px;
+padding: 2px;
+text-align-last: right;
+height: 1px;
+}
+th{
+    height: 50px;
+    background-color: #FFFF00;
+    color: rgb(10, 10, 10);
+    width: 10px;
+}
+.CIDADES {
+background-color: #CCFFFF;
+}
+.ord{
+    background-color: #FFFF00;
+    text-align-last: left;
+    width: 180px;
+}
+.black{
+    background-color: #333333;
+}
+.trasso{
+    text-align-last: center;
+}
+.maca{
+    background-color: #2A6099;
+    color: #90A3B9;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

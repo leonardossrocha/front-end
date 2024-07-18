@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Desenvolvido por Leonardo Rocha - @leonardossrocha -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Sistema de gestão de Serviços para Computadores">
+<meta name="author" content="Leonardo Rocha | @leonardossrocha">
+<title>Serviços de TI</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style type="text/css">
+
+html {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+</style>
+</head>
+<body>
+<div>
+<?php include('sistema/conexao.php');?>
+<nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="current"><a href="index" class="dropdown-toggle js-activated" onclick="window.location.href='index';">Página Inicial</a></li>
+
+          <li><a href="sobre" class="dropdown-toggle js-activated" onclick="window.location.href='sobre';">Sobre o curso</a></li>
+
+          <li class=""><a href="galeria" class="dropdown-toggle js-activated" onclick="window.location.href='galeria';">Formulário</a></li>
+
+          <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Serviços <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+</div>
+</body>
+</html>
