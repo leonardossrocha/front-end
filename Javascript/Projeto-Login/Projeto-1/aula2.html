@@ -7,12 +7,19 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="controller.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
         <label id="nome">Nome:</label>
         <input class="form-control" id="nomeUser" type="text">
+        <!-- NOVA LINHA -->
+        <label for="">Email:</label>
+        <input type="email" class="form-control" name="" id="emailUser">
+        <br><br>
+        <!-- FIM DE NOVA LINHA -->
         <button class="btn btn-primary" type="button" onclick="salvarUser()">Salvar</button>
     </div>
 
@@ -20,6 +27,7 @@
         <table class="table table-striped" id="tabela">
             <tr>
                 <th>Nome Usuario</th>
+                <th>Email</th>
                 <th>Ações</th>
             </tr>
         </table>
