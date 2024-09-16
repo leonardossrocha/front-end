@@ -1,0 +1,122 @@
+/* Estilização geral do corpo da página */
+body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+   
+  /* Estilização do cabeçalho */
+  header {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 15px; /* Reduzido para ajuste */
+    text-align: center;
+  }
+   
+  /* Estilização do título principal (h1) */
+  h1 {
+    margin: 0;
+    font-size: 2rem; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização do container principal da aplicação */
+  main.app-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+   
+  /* Estilização da seção que contém a roda */
+  .wheel-section {
+    margin-bottom: 20px; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização da seção de inputs */
+  .inputs-section {
+    width: 90%;
+    max-width: 700px; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização do subtítulo (h2) */
+  h2 {
+    font-size: 1.3rem; /* Reduzido para ajuste */
+    margin-bottom: 15px; /* Reduzido para ajuste */
+    color: #4A90E2;
+  }
+   
+  /* Estilização do container dos inputs */
+  .inputs-container {
+    background-color: #fff;
+    border-radius: 8px; /* Reduzido para ajuste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduzido para ajuste */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização de cada grupo de input */
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização do número que precede cada input */
+  .input-number {
+    font-size: 1rem; /* Reduzido para ajuste */
+    font-weight: bold;
+    color: #4A90E2;
+    margin-right: 8px; /* Reduzido para ajuste */
+    width: 28px; /* Reduzido para ajuste */
+    text-align: center;
+  }
+   
+  /* Estilização dos campos de entrada de tipo 'number' */
+  input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Reduzido para ajuste */
+    font-size: 0.9rem; /* Reduzido para ajuste */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Reduzido para ajuste */
+  }
+   
+  /* Estilização dos rótulos (labels) */
+  label {
+    font-size: 0.9rem; /* Reduzido para ajuste */
+    color: #555;
+  }
+   
+  /* Estilização do botão de atualizar */
+  .update-button {
+    grid-column: span 2;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    padding: 12px; /* Reduzido para ajuste */
+    font-size: 1rem; /* Reduzido para ajuste */
+    border-radius: 4px; /* Reduzido para ajuste */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+   
+  .update-button:hover {
+    background-color: #357ABD;
+  }
+   
+  /* Estilização do rodapé */
+  footer {
+    background-color: #4A90E2;
+    color: #fff;
+    text-align: center;
+    padding: 8px; /* Reduzido para ajuste */
+    font-size: 0.8rem; /* Reduzido para ajuste */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+   

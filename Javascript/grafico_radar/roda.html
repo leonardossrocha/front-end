@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a página para ter responsividade com o tamanho da tela do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparecerá na aba do navegador -->
+    <title>Roda da Vida</title>
+    <!-- Link para o arquivo CSS que estiliza a página -->
+    <link rel="stylesheet" href="roda.css">
+    <!-- Link para a fonte "Fredoka One" do Google Fonts para estilizar o texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    <!-- Cabeçalho da página com o título principal -->
+    <header>
+        <!-- Título principal que será estilizado pela fonte Fredoka One -->
+        <h1>Roda da Vida</h1>
+    </header>
+ 
+    <!-- Elemento principal da aplicação que contém o conteúdo da página -->
+    <main class="app-container">
+        <!-- Seção para o gráfico da roda da vida -->
+        <section class="wheel-section">
+            <div class="wheel-container">
+                <!-- Canvas onde a roda será desenhada usando JavaScript -->
+                <canvas id="wheel" width="450" height="450"></canvas>
+            </div>
+        </section>
+ 
+        <!-- Seção para os inputs onde o usuário avaliará cada área -->
+        <section class="inputs-section">
+            <h2>Avalie Cada Área</h2>
+            <div class="inputs-container">
+                <!-- Cada bloco contém uma área específica da vida para ser avaliada com um número -->
+               
+                <!-- Grupo de entrada para Autoconhecimento -->
+                <div class="input-group">
+                    <!-- Número indicador do grupo -->
+                    <span class="input-number">1</span>
+                    <!-- Rótulo indicando qual área está sendo avaliada -->
+                    <label for="autoconhecimento">Autoconhecimento</label>
+                    <!-- Campo de entrada para o valor da avaliação, com valores entre 1 e 10 -->
+                    <input type="number" id="autoconhecimento" min="1" max="10" value="7">
+                </div>
+ 
+                <!-- Grupo de entrada para Autoestima -->
+                <div class="input-group">
+                    <span class="input-number">2</span>
+                    <label for="autoestima">Autoestima</label>
+                    <input type="number" id="autoestima" min="1" max="10" value="5">
+                </div>
+ 
+                <!-- Grupo de entrada para Gestão de Emoções -->
+                <div class="input-group">
+                    <span class="input-number">3</span>
+                    <label for="gestaoEmocoes">Gestão de Emoções</label>
+                    <input type="number" id="gestaoEmocoes" min="1" max="10" value="6">
+                </div>
+ 
+                <!-- Grupo de entrada para Relacionamentos -->
+                <div class="input-group">
+                    <span class="input-number">4</span>
+                    <label for="relacionamentos">Relacionamentos</label>
+                    <input type="number" id="relacionamentos" min="1" max="10" value="4">
+                </div>
+ 
+                <!-- Grupo de entrada para Empatia -->
+                <div class="input-group">
+                    <span class="input-number">5</span>
+                    <label for="empatia">Empatia</label>
+                    <input type="number" id="empatia" min="1" max="10" value="3">
+                </div>
+ 
+                <!-- Grupo de entrada para Comunicação -->
+                <div class="input-group">
+                    <span class="input-number">6</span>
+                    <label for="comunicacao">Comunicação</label>
+                    <input type="number" id="comunicacao" min="1" max="10" value="5">
+                </div>
+ 
+                <!-- Grupo de entrada para Propósito -->
+                <div class="input-group">
+                    <span class="input-number">7</span>
+                    <label for="proposito">Propósito</label>
+                    <input type="number" id="proposito" min="1" max="10" value="8">
+                </div>
+ 
+                <!-- Grupo de entrada para Autocontrole -->
+                <div class="input-group">
+                    <span class="input-number">8</span>
+                    <label for="autocontrole">Autocontrole</label>
+                    <input type="number" id="autocontrole" min="1" max="10" value="6">
+                </div>
+ 
+                <!-- Grupo de entrada para Motivação -->
+                <div class="input-group">
+                    <span class="input-number">9</span>
+                    <label for="motivacao">Motivação</label>
+                    <input type="number" id="motivacao" min="1" max="10" value="3">
+                </div>
+ 
+                <!-- Grupo de entrada para Bem-estar -->
+                <div class="input-group">
+                    <span class="input-number">10</span>
+                    <label for="bemEstar">Bem-estar</label>
+                    <input type="number" id="bemEstar" min="1" max="10" value="5">
+                </div>
+ 
+                <!-- Grupo de entrada para Aceitação -->
+                <div class="input-group">
+                    <span class="input-number">11</span>
+                    <label for="aceitacao">Aceitação</label>
+                    <input type="number" id="aceitacao" min="1" max="10" value="8">
+                </div>
+ 
+                <!-- Grupo de entrada para Confiança -->
+                <div class="input-group">
+                    <span class="input-number">12</span>
+                    <label for="confianca">Confiança</label>
+                    <input type="number" id="confianca" min="1" max="10" value="6">
+                </div>
+ 
+                <!-- Botão para atualizar a roda com os valores inseridos -->
+                <button class="update-button" onclick="updateWheel()">Atualizar Roda</button>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- Rodapé da página com a marca FeelMend -->
+    <footer>
+        <p>FeelMend</p>
+    </footer>
+ 
+    <!-- Link para o arquivo JavaScript que manipula a lógica da roda -->
+    <script src="roda.js"></script>
+</body>
+ 
+</html>
