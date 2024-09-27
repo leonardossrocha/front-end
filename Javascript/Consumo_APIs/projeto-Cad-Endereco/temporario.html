@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Cadastro de Endereço</h1>
+        <form method="post">
+            <label for="inputCEP">CEP</label>
+            <input type="text" id="cep">
+
+            <div class="flex-row">
+                <div>
+                    <label for="rua">Rua</label><br>
+                    <input type="text" id="rua" placeholder="Rua dos Bobos">
+                </div>
+                <div>
+                    <label for="inputAddress">N.º</label><br>
+                    <input type="text" id="numero" placeholder="nº 0">
+                </div>
+                <div>
+                    <label for="inputAddress2">Bairro</label><br>
+                    <input type="text" id="bairro" placeholder="Bairro">
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div>
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" id="complemento" placeholder="Apartamento, hotel, casa, etc.">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" id="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado</label><br>
+                    <input type="text" id="estado">
+                </div>
+            </div>
+            <div id="btn">
+                <button>Entrar</button>
+            </div>
+        </form>
+    </main>
+    <script src="controller.js"></script>
+</body>
+
+</html>
